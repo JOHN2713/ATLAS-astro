@@ -1,0 +1,167 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import { motion } from 'framer-motion';
+---
+
+<Layout title="Our Services - ATLAS">
+  <Navigation client:load />
+  
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 md:pt-40 md:pb-24">
+    <div class="container mx-auto max-w-5xl px-6 md:px-12">
+      <div class="opacity-0 animate-fadeIn">
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif font-light mb-8 text-atlas-dark">
+          Bespoke Wealth Structuring & Capital Architecture
+        </h1>
+        <p class="text-lg md:text-xl text-atlas-dark/70 font-light max-w-3xl">
+          Designing capital architecture that aligns with long-term objectives and values.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas of Focus Section -->
+  <section class="py-24 bg-atlas-primary relative">
+    <!-- Grid pattern background -->
+    <div
+      class="absolute inset-0 opacity-[0.04]"
+      style="background-image: linear-gradient(to right, #0a1624 1px, transparent 1px), linear-gradient(to bottom, #0a1624 1px, transparent 1px); background-size: 40px 40px;"
+    >
+    </div>
+    
+    <div class="container mx-auto max-w-6xl px-6 md:px-12 relative z-10">
+      <!-- Title -->
+      <div class="flex items-center justify-center gap-3 mb-16">
+        <svg class="w-5 h-5 text-atlas-dark/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 6v6l4 2" />
+        </svg>
+        <h2 class="text-sm tracking-[0.3em] uppercase text-atlas-dark/70">
+          AREAS OF FOCUS
+        </h2>
+      </div>
+
+      <!-- Areas Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <!-- Private Wealth Structuring -->
+        <div class="group">
+          <div class="w-16 h-16 border border-atlas-dark/20 flex items-center justify-center mb-6 text-atlas-dark/40 group-hover:border-atlas-gold group-hover:text-atlas-gold transition-all duration-300">
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="7" height="18" />
+              <rect x="14" y="8" width="7" height="13" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-normal mb-4 tracking-wide text-atlas-dark">
+            Private Wealth Structuring
+          </h3>
+          <p class="text-sm leading-relaxed text-atlas-dark/60">
+            Designing capital architecture that aligns with long-term objectives and values.
+          </p>
+        </div>
+
+        <!-- Family Governance -->
+        <div class="group">
+          <div class="w-16 h-16 border border-atlas-dark/20 flex items-center justify-center mb-6 text-atlas-dark/40 group-hover:border-atlas-gold group-hover:text-atlas-gold transition-all duration-300">
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <circle cx="9" cy="7" r="3" />
+              <circle cx="15" cy="7" r="3" />
+              <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+              <path d="M13 21v-2a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v2" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-normal mb-4 tracking-wide text-atlas-dark">
+            Family Governance
+          </h3>
+          <p class="text-sm leading-relaxed text-atlas-dark/60">
+            Establishing frameworks for decision-making across generations.
+          </p>
+        </div>
+
+        <!-- Capital Architecture -->
+        <div class="group">
+          <div class="w-16 h-16 border border-atlas-dark/20 flex items-center justify-center mb-6 text-atlas-dark/40 group-hover:border-atlas-gold group-hover:text-atlas-gold transition-all duration-300">
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="4" y="4" width="16" height="16" rx="2" />
+              <line x1="8" y1="8" x2="8" y2="12" />
+              <line x1="8" y1="14" x2="8" y2="16" />
+              <line x1="12" y1="8" x2="12" y2="16" />
+              <line x1="16" y1="8" x2="16" y2="12" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-normal mb-4 tracking-wide text-atlas-dark">
+            Capital Architecture
+          </h3>
+          <p class="text-sm leading-relaxed text-atlas-dark/60">
+            Building structures that preserve and protect wealth through market cycles.
+          </p>
+        </div>
+
+        <!-- Intergenerational Planning -->
+        <div class="group">
+          <div class="w-16 h-16 border border-atlas-dark/20 flex items-center justify-center mb-6 text-atlas-dark/40 group-hover:border-atlas-gold group-hover:text-atlas-gold transition-all duration-300">
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-normal mb-4 tracking-wide text-atlas-dark">
+            Intergenerational Planning
+          </h3>
+          <p class="text-sm leading-relaxed text-atlas-dark/60">
+            Preparing the next generation for the responsibilities of stewardship.
+          </p>
+        </div>
+
+        <!-- Strategic Advisory -->
+        <div class="group">
+          <div class="w-16 h-16 border border-atlas-dark/20 flex items-center justify-center mb-6 text-atlas-dark/40 group-hover:border-atlas-gold group-hover:text-atlas-gold transition-all duration-300">
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+              <line x1="7" y1="7" x2="7.01" y2="7" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-normal mb-4 tracking-wide text-atlas-dark">
+            Strategic Advisory
+          </h3>
+          <p class="text-sm leading-relaxed text-atlas-dark/60">
+            Providing counsel on complex decisions that shape long-term outcomes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom line separator -->
+      <div class="w-full h-px bg-atlas-dark/10 mt-20 mb-8" />
+
+      <!-- CTA -->
+      <div>
+        <a
+          href="/contact"
+          class="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-atlas-dark/60 hover:text-atlas-dark transition-colors duration-300 group"
+        >
+          TALK TO AN EXPERT
+          <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer client:load />
+</Layout>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+</style>

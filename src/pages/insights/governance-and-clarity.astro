@@ -1,0 +1,85 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
+---
+
+<Layout title="Governance and Clarity in Family Wealth - ATLAS">
+  <Navigation client:load />
+
+  <!-- Back to Insights -->
+  <section class="pt-32 pb-8">
+    <div class="container mx-auto max-w-4xl px-6 md:px-12">
+      <a href="/insights" class="inline-flex items-center gap-2 text-xs tracking-wider uppercase text-atlas-dark/60 hover:text-atlas-gold transition-colors duration-300">
+        <span>←</span>
+        BACK TO INSIGHTS
+      </a>
+    </div>
+  </section>
+
+  <!-- Article Header -->
+  <section class="pb-12">
+    <div class="container mx-auto max-w-4xl px-6 md:px-12">
+      <p class="text-xs tracking-widest text-atlas-dark/50 mb-6">
+        FINANCIAL PERSPECTIVES · NOVEMBER 2024
+      </p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-light mb-8 text-atlas-dark leading-tight">
+        Governance and Clarity in Family Wealth
+      </h1>
+      <p class="text-lg md:text-xl text-atlas-dark/70 font-light leading-relaxed">
+        Without clear governance structures, even the most substantial wealth tends to dissipate within three generations. The solution lies not in legal documents alone.
+      </p>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <section class="py-16 md:py-24">
+    <div class="container mx-auto max-w-3xl px-6 md:px-12">
+      <div class="space-y-8 text-atlas-dark/80 leading-relaxed">
+        <p class="text-lg">
+          The statistical reality is sobering: approximately 70% of wealthy families lose their wealth by the second generation, and 90% by the third. This pattern has repeated across cultures, centuries, and economic systems.
+        </p>
+
+        <p class="text-lg">
+          The explanation is not primarily about investment returns or tax planning. It is about governance—or rather, the lack of it.
+        </p>
+
+        <p class="text-lg">
+          Governance in the context of family wealth encompasses the structures, processes, and agreements that guide decision-making. It answers questions that legal documents alone cannot: Who has authority over what decisions? How are disagreements resolved? What values guide the family's approach to wealth?
+        </p>
+
+        <p class="text-lg">
+          Many families resist formalizing governance because it feels corporate or impersonal. They prefer to rely on informal understandings and trust. This works until it doesn't—typically when the founding generation passes, when family members disagree, or when external pressures expose the absence of clear processes.
+        </p>
+
+        <p class="text-lg">
+          Effective governance does not require complex bureaucracy. It requires clarity. Clarity about roles and responsibilities. Clarity about decision-making authority. Clarity about the purpose wealth serves for the family.
+        </p>
+
+        <p class="text-lg">
+          At ATLAS, we help families develop governance frameworks appropriate to their size, complexity, and values. We believe that the investment in governance yields returns that far exceed any financial strategy—because it addresses the root cause of wealth dissipation.
+        </p>
+
+        <p class="text-lg">
+          The families that preserve wealth across generations share certain characteristics. They communicate openly about money. They prepare heirs deliberately. They have clear processes for making decisions together. They understand that wealth preservation is ultimately a human challenge, not a financial one.
+        </p>
+        <p><br /></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Continue Reading Section -->
+  <section class="py-20 bg-[#ebe7e0]">
+    <div class="container mx-auto max-w-3xl text-center px-6 md:px-12">
+      <p class="text-sm tracking-wider uppercase text-atlas-dark/50 mb-6">
+        CONTINUE READING
+      </p>
+      <a href="/insights" class="inline-flex items-center gap-3 border border-atlas-dark px-8 py-4 text-xs tracking-[0.2em] uppercase transition-all duration-300 hover:bg-atlas-dark hover:text-atlas-primary group">
+        EXPLORE MORE PERSPECTIVES
+        <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
+      </a>
+    </div>
+  </section>
+
+  <Footer client:load />
+</Layout>

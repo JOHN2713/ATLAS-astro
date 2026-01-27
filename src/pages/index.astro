@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Hero from '../components/Hero';
+import Principles from '../components/Principles';
+import WhatIsAtlas from '../components/WhatIsAtlas';
+import WhoWeServe from '../components/WhoWeServe';
+import Insights from '../components/Insights';
+import ContactCTA from '../components/ContactCTA';
+import Footer from '../components/Footer';
+---
+
+<Layout title="ATLAS - Private Wealth & Legacy Office">
+  <Navigation client:load />
+  <main>
+    <Hero client:load />
+    <Principles client:load />
+    <WhatIsAtlas client:load />
+    <WhoWeServe client:load />
+    <Insights client:load />
+    <ContactCTA client:load />
+  </main>
+  <Footer client:load />
+</Layout>

@@ -1,0 +1,255 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+---
+
+<Layout title="Insights - ATLAS">
+  <Navigation client:load />
+  
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 md:pt-40 md:pb-24">
+    <div class="container mx-auto max-w-6xl px-6 md:px-12">
+      <div class="opacity-0 animate-fadeIn">
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif font-light mb-6 md:mb-8 text-atlas-dark">
+          Insights
+        </h1>
+        <p class="text-lg md:text-xl text-atlas-dark/70 font-light max-w-3xl leading-relaxed">
+          Perspectives on wealth, governance, and the long-term stewardship of capital.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="pb-12">
+    <div class="container mx-auto max-w-6xl px-6 md:px-12">
+      <div class="flex flex-wrap gap-4 md:gap-8" id="filters">
+        <button
+          data-filter="ALL"
+          class="filter-btn text-xs tracking-widest uppercase transition-colors duration-300 pb-2 border-b-2 border-atlas-dark text-atlas-dark"
+        >
+          ALL
+        </button>
+        <button
+          data-filter="FOUNDATIONAL ESSAYS"
+          class="filter-btn text-xs tracking-widest uppercase transition-colors duration-300 pb-2 border-b-2 border-transparent text-atlas-dark/40 hover:text-atlas-dark/70"
+        >
+          FOUNDATIONAL ESSAYS
+        </button>
+        <button
+          data-filter="FINANCIAL PERSPECTIVES"
+          class="filter-btn text-xs tracking-widest uppercase transition-colors duration-300 pb-2 border-b-2 border-transparent text-atlas-dark/40 hover:text-atlas-dark/70"
+        >
+          FINANCIAL PERSPECTIVES
+        </button>
+        <button
+          data-filter="LETTERS & NOTES"
+          class="filter-btn text-xs tracking-widest uppercase transition-colors duration-300 pb-2 border-b-2 border-transparent text-atlas-dark/40 hover:text-atlas-dark/70"
+        >
+          LETTERS & NOTES
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles Grid -->
+  <section class="pb-24">
+    <div class="container mx-auto max-w-6xl px-6 md:px-12">
+      <div class="space-y-12 md:space-y-16">
+        
+        <!-- Article 1: Structure Over Speculation -->
+        <article class="group insight-article" data-category="FOUNDATIONAL ESSAYS">
+          <div class="flex gap-6 md:gap-8">
+            <!-- Icon -->
+            <div class="flex-shrink-0 w-12 h-12 border border-atlas-dark/20 flex items-center justify-center text-atlas-dark/40 group-hover:border-atlas-gold group-hover:text-atlas-gold transition-all duration-300">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              </svg>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1">
+              <!-- Category and date -->
+              <div class="text-xs tracking-widest text-atlas-dark/50 mb-4">
+                FOUNDATIONAL ESSAYS · DECEMBER 2024
+              </div>
+
+              <!-- Title -->
+              <a href="/insights/structure-over-speculation">
+                <h3 class="text-2xl md:text-3xl font-serif font-light mb-4 tracking-wide text-atlas-dark group-hover:text-atlas-gold transition-colors duration-300 cursor-pointer">
+                  Structure Over Speculation: A Framework for Long-Term Capital
+                </h3>
+              </a>
+
+              <!-- Excerpt -->
+              <p class="text-sm md:text-base leading-relaxed text-atlas-dark/60 mb-4">
+                The distinction between building wealth and preserving it requires a fundamentally different orientation toward risk, time, and decision-making.
+              </p>
+
+              <!-- Read more link -->
+              <a
+                href="/insights/structure-over-speculation"
+                class="inline-flex items-center gap-2 text-xs tracking-wider text-atlas-dark/60 group-hover:text-atlas-gold transition-colors duration-300 group/link"
+              >
+                Read article
+                <span class="group-hover/link:translate-x-1 transition-transform duration-300">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2: Governance and Clarity -->
+        <article class="group insight-article" data-category="FINANCIAL PERSPECTIVES">
+          <div class="flex gap-6 md:gap-8">
+            <!-- Icon -->
+            <div class="flex-shrink-0 w-12 h-12 border border-atlas-dark/20 flex items-center justify-center text-atlas-dark/40 group-hover:border-atlas-gold group-hover:text-atlas-gold transition-all duration-300">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+                <polyline points="10 9 9 9 8 9" />
+              </svg>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1">
+              <!-- Category and date -->
+              <div class="text-xs tracking-widest text-atlas-dark/50 mb-4">
+                FINANCIAL PERSPECTIVES · NOVEMBER 2024
+              </div>
+
+              <!-- Title -->
+              <a href="/insights/governance-and-clarity">
+                <h3 class="text-2xl md:text-3xl font-serif font-light mb-4 tracking-wide text-atlas-dark group-hover:text-atlas-gold transition-colors duration-300 cursor-pointer">
+                  Governance and Clarity in Family Wealth
+                </h3>
+              </a>
+
+              <!-- Excerpt -->
+              <p class="text-sm md:text-base leading-relaxed text-atlas-dark/60 mb-4">
+                Without clear governance structures, even the most substantial wealth tends to dissipate within three generations. The solution lies not in legal documents alone.
+              </p>
+
+              <!-- Read more link -->
+              <a
+                href="/insights/governance-and-clarity"
+                class="inline-flex items-center gap-2 text-xs tracking-wider text-atlas-dark/60 group-hover:text-atlas-gold transition-colors duration-300 group/link"
+              >
+                Read article
+                <span class="group-hover/link:translate-x-1 transition-transform duration-300">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3: Letter January 2024 -->
+        <article class="group insight-article" data-category="LETTERS & NOTES">
+          <div class="flex gap-6 md:gap-8">
+            <!-- Icon -->
+            <div class="flex-shrink-0 w-12 h-12 border border-atlas-dark/20 flex items-center justify-center text-atlas-dark/40 group-hover:border-atlas-gold group-hover:text-atlas-gold transition-all duration-300">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1">
+              <!-- Category and date -->
+              <div class="text-xs tracking-widest text-atlas-dark/50 mb-4">
+                LETTERS & NOTES · JANUARY 2024
+              </div>
+
+              <!-- Title -->
+              <a href="/insights/letter-january-2024">
+                <h3 class="text-2xl md:text-3xl font-serif font-light mb-4 tracking-wide text-atlas-dark group-hover:text-atlas-gold transition-colors duration-300 cursor-pointer">
+                  A Letter to Clients: On Patience and Perspective
+                </h3>
+              </a>
+
+              <!-- Excerpt -->
+              <p class="text-sm md:text-base leading-relaxed text-atlas-dark/60 mb-4">
+                Reflecting on the role of discipline and long-term thinking in periods of market uncertainty and broader economic transition.
+              </p>
+
+              <!-- Read more link -->
+              <a
+                href="/insights/letter-january-2024"
+                class="inline-flex items-center gap-2 text-xs tracking-wider text-atlas-dark/60 group-hover:text-atlas-gold transition-colors duration-300 group/link"
+              >
+                Read article
+                <span class="group-hover/link:translate-x-1 transition-transform duration-300">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 md:py-32 border-t border-atlas-dark/10">
+    <div class="container mx-auto max-w-4xl px-6 md:px-12 text-center">
+      <a
+        href="/contact"
+        class="inline-flex items-center gap-3 border border-atlas-dark px-8 md:px-10 py-3 md:py-4 text-xs tracking-[0.2em] uppercase transition-all duration-300 hover:bg-atlas-dark hover:text-atlas-primary group"
+      >
+        TALK TO AN EXPERT
+        <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
+      </a>
+    </div>
+  </section>
+
+  <Footer client:load />
+</Layout>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+</style>
+
+<script>
+  // Filter functionality
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const articles = document.querySelectorAll('.insight-article');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      
+      // Update active button
+      filterButtons.forEach(btn => {
+        btn.classList.remove('border-atlas-dark', 'text-atlas-dark');
+        btn.classList.add('border-transparent', 'text-atlas-dark/40');
+      });
+      button.classList.remove('border-transparent', 'text-atlas-dark/40');
+      button.classList.add('border-atlas-dark', 'text-atlas-dark');
+
+      // Filter articles
+      articles.forEach(article => {
+        const category = article.getAttribute('data-category');
+        if (filter === 'ALL' || category === filter) {
+          article.style.display = 'block';
+        } else {
+          article.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
