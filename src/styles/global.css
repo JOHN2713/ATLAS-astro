@@ -1,6 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-atlas-primary: #f7f3ed;
+  --color-atlas-dark: #0d1926;
+  --color-atlas-secondary: #ebe7e0;
+  --color-atlas-gold: #d4af37;
+  
+  --font-family-sans: 'Source Sans 3', system-ui, sans-serif;
+  --font-family-serif: 'EB Garamond', Georgia, serif;
+  --font-family-display: 'CameraPlainVariable', 'Source Sans 3', sans-serif;
+}
 
 @layer base {
   body {
