@@ -1,8 +1,5 @@
 {
-  "cosmic": {
-    "framework": "astro",
-    "buildCommand": "npm install && npm run build",
-    "outputDirectory": "dist",
-    "nodeVersion": "22"
+  "cloud": {
+    "framework": "astro"
   }
 }
