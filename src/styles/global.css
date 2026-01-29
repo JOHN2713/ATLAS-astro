@@ -1,68 +1,23 @@
-@import "tailwindcss";
-
-@theme {
-  --color-atlas-primary: #f7f3ed;
-  --color-atlas-dark: #0d1926;
-  --color-atlas-secondary: #ebe7e0;
-  --color-atlas-gold: #d4af37;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   body {
-    background-color: var(--color-atlas-primary);
-    color: var(--color-atlas-dark);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    @apply bg-atlas-primary text-atlas-dark antialiased;
   }
 }
 
 @layer components {
   .btn-primary {
-    border: 1px solid var(--color-atlas-dark);
-    padding: 0.75rem 2rem;
-    font-size: 0.875rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: all 300ms;
-  }
-  
-  .btn-primary:hover {
-    background-color: var(--color-atlas-dark);
-    color: var(--color-atlas-primary);
+    @apply border border-atlas-dark px-8 py-3 text-sm tracking-widest uppercase transition-all duration-300 hover:bg-atlas-dark hover:text-atlas-primary;
   }
   
   .section-title {
-    font-size: 2.25rem;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    margin-bottom: 2rem;
-    color: var(--color-atlas-dark);
-  }
-  
-  @media (min-width: 768px) {
-    .section-title {
-      font-size: 3rem;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .section-title {
-      font-size: 3.75rem;
-    }
+    @apply text-4xl md:text-5xl lg:text-6xl font-light tracking-wider mb-8 text-atlas-dark;
   }
   
   .container-custom {
-    max-width: 80rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  
-  @media (min-width: 768px) {
-    .container-custom {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
+    @apply max-w-7xl mx-auto px-6 md:px-12;
   }
 }
